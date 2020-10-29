@@ -11,12 +11,12 @@ public class Cancion {
 
 
     //metodos reproducir, editar, grabar, etc...
-    public void cantar()
+    public void trovar(String letra, String melodia)
     {
-
+        System.out.println("trovando");
     }
 
-    public String escribir()
+    public String escribir(String titulo)
     {
       return letra;
     }

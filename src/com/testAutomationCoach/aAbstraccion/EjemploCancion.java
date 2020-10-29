@@ -11,6 +11,12 @@ public class EjemploCancion {
         lasMañanitas.titulo = "En andariego";
         lasMañanitas.duracion = 15;
 
+        Alarma objeto = new Alarma();
+        objeto.mensaje = objeto.sonar(2,3,5);
+        libs.Input.print(objeto.mensaje);
+
+        CarritoDeCompras coche = new CarritoDeCompras();
+        coche.eliminarCarrito(8080);
 
 
         cambiarArtista(lasMañanitas, "maluma");
