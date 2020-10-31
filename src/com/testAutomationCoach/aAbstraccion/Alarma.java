@@ -33,7 +33,7 @@ public class Alarma {
         this.hora=hora;
         this.minutos=minutos;
         this.segundos=segundos;
-        String Ring = "Ring Ring Ring";
+        String Ring = " Ring Ring Ring";
 
         libs.Input.print(Ring);
         return Ring;
