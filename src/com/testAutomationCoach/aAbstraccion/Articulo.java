@@ -1,5 +1,7 @@
 package com.testAutomationCoach.aAbstraccion;
 
+import com.testAutomationCoach.libs.Input;
+
 public class Articulo {
 
     public int referencia;
@@ -9,16 +11,20 @@ public class Articulo {
     public String color;
     public double tamano;
     public double peso;
-    public double precio;
+    public double precioUnitario;
+    public double precioTotal;
+    public int cantidad;
+    public double iva;
 
     public void alquilarArticulo(String marca, int referencia, double precio)
     {
-        System.out.println("Articulo alquilado");
+        Input.print("Factura \n");
+        System.out.println("Articulo: "+marca+" " + "\nReferencia: "+referencia+"\nPrecio: "+precio+"\n ");
     }
 
-    public void comprarArticulo(String marca, int referencia, double precio, String descripcion)
+    public void comprarArticulo(String marca, int referencia, double precio)
     {
-        libs.Input.print("Articulo comprado");
+        Input.print("Articulo Comprado");
     }
 
     public void cotizarArticulo(int referencia, double precio, String marca, String color)

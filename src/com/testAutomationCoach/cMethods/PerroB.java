@@ -1,5 +1,7 @@
 package com.testAutomationCoach.cMethods;
 
+import com.testAutomationCoach.libs.Input;
+
 public class PerroB {
     //variables de instancia, tamano, raza, nombre
     public double tamanio;
@@ -10,11 +12,11 @@ public class PerroB {
 
     public void ladrar() {
         if(tamanio > 60.0) {
-            libs.Input.print("woof, woof!\n");
+            Input.print("woof, woof!\n");
         } else if( tamanio > 20 ) {
-            libs.Input.print("guau, guau!\n");
+            Input.print("guau, guau!\n");
         } else {
-            libs.Input.print("yip, yip!\n");
+            Input.print("yip, yip!\n");
         }
     }
 

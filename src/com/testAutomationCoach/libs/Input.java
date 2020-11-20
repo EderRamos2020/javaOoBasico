@@ -1,13 +1,17 @@
-package libs;
+package com.testAutomationCoach.libs;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
+
 	public int sx;
 	public static Scanner sc = new Scanner(System.in);
 
+
+
 	public static int get_int() {
+
 		Integer retInt = Integer.MAX_VALUE;
 		while(retInt.equals(Integer.MAX_VALUE)) {
 			try {
@@ -22,6 +26,7 @@ public class Input {
 	}
 
 	public static float get_float() {
+
 		Float retFloat = Float.MAX_VALUE;
 		while(retFloat.equals(Float.MAX_VALUE)) {
 			try {
@@ -64,7 +69,7 @@ public class Input {
 	}
 
 	public static void print(String s) {
-		System.out.print(s);
+		System.out.println(s);
 	}
 
 	public static void print(int i) {
@@ -104,7 +109,13 @@ public class Input {
 		
 	}
 
-
-
+	public static int get_int(String message)
+	{
+   		//Integer retInt = Integer.MAX_VALUE;
+		print(message);
+		int a =sc.nextInt();
+		//int retInt = a;
+   		return a;
+	}
 
 }

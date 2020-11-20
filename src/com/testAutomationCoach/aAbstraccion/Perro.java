@@ -1,5 +1,7 @@
 package com.testAutomationCoach.aAbstraccion;
 
+import com.testAutomationCoach.libs.Input;
+
 public class Perro {
     //variables de instancia, tamano, raza, nombre
     public double tamanio;
@@ -12,17 +14,17 @@ public class Perro {
 
     public void ladrar()
     {
-        libs.Input.print("guau guau guau");
+        Input.print("guau guau guau");
     }
 
     public void correr()
     {
-        libs.Input.print("ras ras ras");
+        Input.print("ras ras ras");
     }
 
     public void comer()
     {
-        libs.Input.print("chaw chaw chaw");
+        Input.print("chaw chaw chaw");
     }
 
     public String habilidad (double edad, String raza)

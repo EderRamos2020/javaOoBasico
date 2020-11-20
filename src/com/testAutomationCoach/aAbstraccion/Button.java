@@ -1,36 +1,42 @@
 package com.testAutomationCoach.aAbstraccion;
 
+import com.testAutomationCoach.libs.Input;
+
 public class Button {
     String label;
     String font;
     String color;
     String forma;
-    double ancho;
-    double alto;
-    String mensaje;
+    double perimetro;
 
-    public void setColor(String externoColor)
-    {
-        Button cuadro = new Button();
-        cuadro.mensaje=getColor(externoColor);
-        libs.Input.print("color del boton "+cuadro.mensaje);
-    }
+    String mensaje;
 
     public void setLabel(String myLabel)
     {
-        System.out.println("descripcion del boton "+myLabel);
+        this.label = "["+myLabel+"]";
+        System.out.println(" boton "+this.label);
+    }
+
+    public void setColor(String externoColor, String label1)
+    {
+        this.label=label1;
+        Button cuadro = new Button();
+        cuadro.setLabel(label1);
+        cuadro.mensaje=getColor(externoColor);
+        Input.print("este boton "+"["+this.label+"] "+cuadro.mensaje);
     }
 
     public String getColor(String myColor)
     {
         this.color = myColor;
-        String colorRetornado= "Colorea con "+this.color;
+        String colorRetornado= "Colorealo con "+this.color;
         return colorRetornado;
     }
 
-    public String getLabel(String myLabel)
+    public String getLabel()
     {
-        return null;
+
+        return this.label;
     }
 
     public void onclick()

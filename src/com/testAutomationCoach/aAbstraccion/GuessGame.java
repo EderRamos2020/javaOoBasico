@@ -1,4 +1,4 @@
-package chap02;
+package com.testAutomationCoach.aAbstraccion;
 
 public class GuessGame {
 

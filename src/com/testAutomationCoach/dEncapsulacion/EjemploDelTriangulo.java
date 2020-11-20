@@ -1,6 +1,6 @@
 package com.testAutomationCoach.dEncapsulacion;
 
-import libs.Input;
+import com.testAutomationCoach.libs.Input;
 
 public class EjemploDelTriangulo {
 
@@ -13,5 +13,9 @@ public class EjemploDelTriangulo {
 		
 		Input.print(Double.MAX_VALUE + "\n");
 		Input.print(Float.MAX_VALUE);
+
+		Alarma lol = new Alarma();
+		int hora=lol.sonarAlarma();
+
 	}
 }

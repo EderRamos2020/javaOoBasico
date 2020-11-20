@@ -1,5 +1,7 @@
 package com.testAutomationCoach.aAbstraccion;
 
+import com.testAutomationCoach.libs.Input;
+
 public class Alarma {
 
     public int id;
@@ -35,7 +37,7 @@ public class Alarma {
         this.segundos=segundos;
         String Ring = " Ring Ring Ring";
 
-        libs.Input.print(Ring);
+        Input.print(Ring);
         return Ring;
 
     }

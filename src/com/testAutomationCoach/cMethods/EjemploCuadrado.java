@@ -1,6 +1,6 @@
 package com.testAutomationCoach.cMethods;
 
-import libs.Input;
+import com.testAutomationCoach.libs.Input;
 
 public class EjemploCuadrado {
 

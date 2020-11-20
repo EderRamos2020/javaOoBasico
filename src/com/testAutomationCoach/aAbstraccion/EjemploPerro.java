@@ -1,5 +1,7 @@
 package com.testAutomationCoach.aAbstraccion;
 
+import com.testAutomationCoach.libs.Input;
+
 public class EjemploPerro {
     public static void main(String[] args) {
         Perro fido = new Perro();
@@ -11,9 +13,9 @@ public class EjemploPerro {
         fido.correr();
         fido.comer();
 
-        libs.Input.print("Nombre " + fido.nombre + "\n");
-        libs.Input.print("Raza " +fido.raza + "\n");
-        libs.Input.print("Tamaño " + fido.tamanio + "\n");
+        Input.print("Nombre " + fido.nombre + "\n");
+        Input.print("Raza " +fido.raza + "\n");
+        Input.print("Tamaño " + fido.tamanio + "\n");
 
     }
 }

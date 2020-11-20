@@ -1,5 +1,7 @@
 package com.testAutomationCoach.aAbstraccion;
 
+import com.testAutomationCoach.libs.Input;
+
 public class EjemploCancion {
 
 
@@ -13,7 +15,7 @@ public class EjemploCancion {
 
         Alarma objeto = new Alarma();
         objeto.mensaje = objeto.sonar(2,3,5);
-        libs.Input.print(objeto.mensaje);
+        Input.print(objeto.mensaje);
 
         CarritoDeCompras coche = new CarritoDeCompras();
         coche.eliminarCarrito(8080);
