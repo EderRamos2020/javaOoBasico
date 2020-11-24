@@ -17,5 +17,12 @@ public class EjemploDelTriangulo {
 		Alarma lol = new Alarma();
 		int hora=lol.sonarAlarma();
 
+		String[] estudios = new String[] {"licenciado", "diplomado", "especializacion"};
+		String[] experiencia= new String[] {"prof reemplazo", "prof catedra", "coordinador"};
+		Maestro perez = new Maestro(555, estudios, "derecho penal", experiencia);
+
+		perez.impExperiencia();
+		perez.tipoMaestro(18);
+
 	}
 }
