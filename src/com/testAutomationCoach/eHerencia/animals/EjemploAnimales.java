@@ -1,4 +1,7 @@
 package com.testAutomationCoach.eHerencia.animals;
+import com.testAutomationCoach.eHerencia.Web.Persona;
+
+import javax.swing.*;
 
 public class EjemploAnimales {
 
@@ -33,6 +36,10 @@ public class EjemploAnimales {
             poly.comer();
             //poly.recorrerTerreno();
         }
+
+        JOptionPane.showMessageDialog(null, "Hello Colombia");
+
+        int cont = Persona.contadorObjetos;
 
     }
 }
